@@ -18,5 +18,5 @@ get '/' do
 end
 
 get '/about' do
-  haml :about, :layout => :'layouts/page'
+  haml :about, :layout => :'layouts/application'
 end
