@@ -44,10 +44,22 @@
 .row.project-row
   .span4.project
     .header
-      %h2 rMPD
+      %h2 
+        %a{:href => '/ruby/rmpd'} rMPD - MPD Client
     .body
       %p
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        This is a web based client I made for MPD, the Music Player
+        Daemon. I love MPD because it allows me to run one instance of
+        it on my media center at home, which I can then control from
+        any of the numerous network connected devices I have at home.
+        With it's built in HTTP streaming, it also gives me access to
+        my library from my office, friend's houses, etc. rMPD is broken
+        up into two pieces. The first is a server that runs on your home
+        network. This is basically a wrapper to librmpd to provide a
+        RESTful HTTP API for MPD. The other piece is a JavaScript
+        heavy web-based client to communicate with the server.
+        %a{:href => 'ruby/rmpd'} Click here
+        to find out more and view the code.
   .span4.project
     .header
       %h2 Data Mining
@@ -61,7 +73,7 @@
         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   .span4.project
     .header
-      %h2 Ruby Warrior
+      %h2 Ruby Warrior Lesson Plan
     .body
       %p
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
