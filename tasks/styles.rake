@@ -42,7 +42,7 @@ namespace :styles do
     
     task :clear do
       puts "*** Clearing styles ***"
-      system "rm -Rfv public/stylesheets/*"
+      system "rm -Rfv public/stylesheets/application.css"
     end
 
     task :default => :clear do
