@@ -10,11 +10,17 @@ function set_active_menu_item() {
   $('ul.nav > li').removeClass('active');
 
   switch (path) {
-    case "":
-      selector += 'li.home';
-      break;
     case "about":
-      selector += 'li.about';
+      selector += 'li#about';
+      break;
+    case "ruby":
+      selector += 'li#ruby';
+      break;
+    case "php":
+      selector += 'li#php';
+      break;
+    case "embedded_systems":
+      selector += 'li#embedded';
       break;
   }
 
