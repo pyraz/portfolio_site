@@ -1,0 +1,74 @@
+.section
+  .header
+    %h1 rMPD - A Web Based MPD Client
+  .body
+    %p
+      As it's name implies, rMPD is a client for MPD, written in
+      Ruby. MPD follows the linux of philosophy of doing one thing 
+      (and do it well), and is definitely my preferred program for
+      playing music. MPD allows me to have one intance of it running on
+      my media center at home, which I can control from any of my
+      various network connected devices. MPD also has built in HTTP
+      streaming functionality, which gives me easy access to my home 
+      library from my office, friend's houses, etc. Combine all that with
+      the fact that MPD can handle any encoding format you can throw at
+      it and you can easily see why I love it so much.
+    %p
+      The only problem with MPD was connecting to it. When away from home
+      I had to use a VPN client, which meant that every time I started
+      my favorite MPD client Ario, I had to switch which profile I wanted
+      to control. Furthermore, when away from home, I had to launch up
+      and instance of VLC to actually play the stream I was controlling
+      via Ario and MPD. These tiny hassles became the motivation for
+      rMPD. My vision was simple, a hosted, cloud-based client that
+      connects to a small footprint "server" on your home machine in
+      order to control your MPD instance. Therefore, whether you were on
+      your home network, or surfing the WiFi at Starbucks, you would load
+      up the same client without having to configure anything. Having a
+      hosted client would also save you the hassle of remembering your
+      home IP, or using some sort of dynamic DNS service. Finally,
+      with a built into HTML5 <audio> tag, when you're not at home,
+      playback would begin instantly, and be controlled via the same
+      set of controls that are controlling MPD, instead of having to
+      control the stream seperately through another program (like VLC).
+    %p
+      That was the motivation for the seperation between the server
+      and client sides of rMPD. However, after asking around, I 
+      discovered this program might be for more of a niche audience than
+      I originally realized. I don't know of how many people still have
+      large digital music collections (as opposed to keeping everything
+      on the cloud). Furthermore, I know of even fewer people who use
+      MPD. Therefore, this never became a hosted solution, and pretty
+      much just exists on my machine and GitHub. Nevertheless, feel
+      free to take a look at the source and let me know what you think.
+      If you'd be interested in this becoming the hosted MPD client it
+      was envisioned as, please let me know.
+
+.row.project-row
+  .span6.project
+    .header
+      %h2
+        %a{:href => 'https://github.com/pyraz/rMPD'} rMPD Client
+    .body
+      %p
+        This is the web-based client. At the moment it's pretty much just
+        JavaScript and HTML (well, HAML). It's built on Rails, which at 
+        the moment is entirely overkill. However, if I do ever deploy it 
+        as a cloud-based client, then Rails will help a lot with the 
+        heavier lifting that will entail. Check out the source on 
+        %a{:href => 'https://github.com/pyraz/rMPD'} GitHub.
+  .span6.project
+    .header
+      %h2
+        %a{:href => 'https://github.com/pyraz/rMPD-server'} rMPD Server
+    .body
+      %p
+        This is the server-side of rMPD. It's basically a wrapper to 
+        provide an HTTP API to the fantastic librmpd library. This was
+        built in Sinatra, since anything more seemed like overkill and I
+        wanted to keep the footprint pretty small. While my master plan
+        or a hosted MPD client never came to fruition, writing this 
+        server side part was a fantastic excercies in writing a RESTful 
+        API. Head on over to 
+        %a{:href => 'https://github.com/pyraz/rMPD-server'} GitHub
+        to read the source.

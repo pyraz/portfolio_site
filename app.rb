@@ -20,3 +20,8 @@ end
 get '/:page' do
   haml params[:page].to_sym, :layout => :'layouts/application'
 end
+
+get '/ruby/:page' do
+  template = "ruby/#{params[:page]}"
+  haml template.to_sym, :layout => :'layouts/application'
+end
