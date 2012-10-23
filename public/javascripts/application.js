@@ -22,7 +22,12 @@ function set_active_menu_item() {
     case "embedded_systems":
       selector += 'li#embedded';
       break;
+    default:
+      selector = false;
+      break;
   }
 
-  $(selector).addClass('active');
+  if (selector) {
+    $(selector).addClass('active');
+  }
 }
