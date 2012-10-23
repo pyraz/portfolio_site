@@ -17,11 +17,16 @@ get '/' do
   haml :index, :layout => :'layouts/application'
 end
 
-get '/:page' do
-  haml params[:page].to_sym, :layout => :'layouts/application'
-end
-
 get '/ruby/:page' do
   template = "ruby/#{params[:page]}"
   haml template.to_sym, :layout => :'layouts/application'
+end
+
+get '/data_mining/:page' do
+  template = "data_mining/#{params[:page]}"
+  haml template.to_sym, :layout => :'layouts/data_mining'
+end
+
+get '/:page' do
+  haml params[:page].to_sym, :layout => :'layouts/application'
 end
