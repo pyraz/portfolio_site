@@ -77,3 +77,22 @@ body {
 .figure {
   margin-bottom: 7px;
 }
+
+.equation {
+  text-align: center;
+  font-size: 16px;
+}
+
+ol.toc {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+ol.toc li a {
+  font-size: 1.2em;
+  line-height: 2em;
+  text-decoration: none;
+}
+ol.toc li a:hover {
+  text-decoration: underline;
+}

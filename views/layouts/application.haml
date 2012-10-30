@@ -4,7 +4,8 @@
     %meta{:'http-equiv' => "Content-Type", :content => "text/html; charset=utf-8"}
     %meta{:name => "lang", :content => "en"}
     %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0"}
-    %title Trevor Whitney, Ruby Developer
+    %meta{:name => "author", :content => "Trevor Whitney"}
+    = yield_content :title
     %link{:href => '/stylesheets/bootstrap.css', :rel => 'stylesheet'}
     %link{:href => '/stylesheets/bootstrap-responsive.css', :rel => 'stylesheet'}
     %link{:href => '/stylesheets/application.css', :media => "screen", :rel => 'stylesheet', :type => "text/css"}
