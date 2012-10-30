@@ -4,33 +4,29 @@
     %h1 Embedded Systems
   .body
     %p
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
+      I have been exposed to embedded systems through theoretical and hands-on education. The theoretical bit came from a theory-based embedded systems class I took in graduate school. The class prepared me for my masters project, which was building an embedded system for Loveland Ski Area called SkinTrack. Pretty much all of my hands-on work with embedded systems has been on the prototyping level, and therefore has all been done on the Arduino platform, which I think is the best microcontroller platform for rapid prototyping. SkinTrack has garnered interest from other resorts, and as a part of my masters project, I will be turning it into a more commercial-ready product with a custom PCB.
+    %p
+      As a result of my work with SkinTrack, I have also been working on better software for a base-station, as well as tools to make deploying XBee based wireless sensors (like SkinTrack) easier. This was the motivation for my Android application SenseCheck, which when used in conjunction with an IOIO board, is a tool that can aid in testing sensors in the field, and provides a quick solution for short-term data collection.
 .row.project-row
   .span6.project
     .header
       %h2 SkinTrack
     .body
       %p
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        SkinTrack is my Computer Science masters project at the Colorado School of Mines. SkinTrack is a wireless sensor that counts the number of individuals who enter lift-acessible backcountry ski terrain with and without transmitting avalanche beacons. It consists of two infared sensors to detect when, and in which direction, individuals pass through the gate, as well as a BCA becaon checker to determine if they are wearing a transmitting avalance beacon. This information is processed by an
+        %a{:href => "http://www.arduino.cc/en/Main/arduinoBoardUno"} Arduino Uno
+        , and sent via
+        %a{:href => "http://www.digi.com/xbee/"} XBee
+        to a
+        %a{:href => "http://beagleboard.org/bone"} BeagleBone
+        base station. The information is then relayed to a web service, where it is collected and displayed.
+      %p
+        The first version of SkinTrack was installed at Loveland Ski Area over the 2011-2012 ski season. The sensor has been upgraded, and will be redeployed for the 2012-2013 ski season. During this season a public facing web site will be developed to disseminate the statistics being collected on our servers. Please check back over the winter for more information about, and a link to, this new site.
   .span6.project
     .header
       %h2 SenseCheck
     .body
       %p
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        SenseCheck is an Android application I developed as my final project for a mobile application development class I took in graduate school. SenseCheck is a tool for debugging wireless sensor networks. It will integreate with an IOIO board and an XBee radio, and is designed to help engineers more easily configure and debug a wireless network using the 802.15.4 protocol while in the field. This project is still a work in progress, so check back for updates to this section. To learn more about my Android development, check out the
+        %a{:href => "/android"} Android section
+        \.
