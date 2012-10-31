@@ -1,0 +1,14 @@
+- content_for :title do
+  %title Contact Me
+.row
+  .span12
+    %p
+      Have a question? Have a job offer? Send me an e-mail or leave me a voicemail and I'll get right back to you.
+    .row
+      .span6.contact
+        %a{:href => "mailto:trevorjwhitney@gmail.com"} e-mail me!
+      .span6.contact
+        %object{:type => "application/x-shockwave-flash", :data => "https://clients4.google.com/voice/embed/webCallButton", :width => "230", :height => "85"}
+          %param{:name => "movie", :value => "https://clients4.google.com/voice/embed/webCallButton"}
+          %param{:name => "wmode", :value => "transparent"}
+          %param{:name => "FlashVars", :value => "id=a1657eedc19de5105845d40bb38b87bf3f03d66b&style=0"}

@@ -96,3 +96,23 @@ ol.toc li a {
 ol.toc li a:hover {
   text-decoration: underline;
 }
+
+.portrait {
+  width: 250px;
+  margin: 0 auto 10px;
+}
+.portrait img {
+  width: 250px;
+  box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.15);
+  border: 1px solid #222222;
+}
+
+.contact {
+  margin: 10px auto 120px;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.contact a {
+  line-height: 3.2em;
+}
