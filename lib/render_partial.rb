@@ -4,7 +4,8 @@
 module Sinatra
   module RenderPartial
     def partial(page, options={})
-      haml page, options.merge!(:layout => false)
+      partial = "partials/#{page}".to_sym
+      haml partial, options.merge!(:layout => false)
     end
   end
  
