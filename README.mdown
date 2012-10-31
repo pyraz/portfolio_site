@@ -3,3 +3,5 @@
 ## A simple informational website about me!
 
 This is a small repo for a small, informational site about me. I'm a graduate student, and needed a place to put my portfolio and resume so I could find me one of those job things, so, this is what I came up with.
+
+The site is hosted at [trevorwhitney.com](http://trevorwhitney.com)
