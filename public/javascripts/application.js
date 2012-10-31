@@ -1,7 +1,5 @@
 $(document).ready(function() {
-
   set_active_menu_item();
-
 });
 
 function set_active_menu_item() {

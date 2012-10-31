@@ -1,6 +1,8 @@
 body {
-  padding-top: 60px;
   margin-bottom: 30px;
+}
+body .main-content {
+  padding-top: 50px;
 }
 
 .navbar-inverse .navbar-inner {
